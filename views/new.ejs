@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+
+<div class = "ui main text container segment">
+	<div class = "ui huge header">New Event</div>
+	<form class = "ui form" action = "/events" method = "POST">
+		<div class = "field">
+			<label>Title</label>
+			<input type = "text" name = "event[title]" placeholder = "title">
+		</div>
+		<div class = "field">
+			<label>Image</label>
+			<input type = "text" name = "event[image]" placeholder = "title">
+		</div>
+		<div class = "field">
+			<label>Event Content</label>
+			<textarea name = "event[body]" placeholder = "Event content goes here" required></textarea>
+		</div>
+		<input class = "ui violet basic button big" type = "submit">	
+	</form>
+</div>
+
+<%- include("partials/footer") %>

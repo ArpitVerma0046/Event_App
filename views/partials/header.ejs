@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event App</title>
+		<link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+				<link rel = "stylesheet" type = "text/css" href = "/stylesheets/app.css">
+
+	</head>
+	<body>
+		
+		<div class = "ui fixed inverted menu">
+			<div class = "ui container">
+				<div class = "header item"><i class = "video camera icon"></i>Bliss</div>
+				<a class = "item" href = "/">Home</a>
+				<a class = "item" href = "/events/new">Add New</a>
+				
+				<div class = "right menu">
+					<% if(!currentUser){ %>
+						<a class = "item" href = "/login">Login</a>
+			    		<a class = "item" href = "/register">Sign Up</a>
+					<% } else { %>		
+					    <a class = "item" href = #>Signed in as <%= currentUser.username %></a>
+						<a class = "item" href = "/logout">Logout</a>
+					<% } %>	
+				</div>
+				
+				
+			</div>
+		</div>
+		

@@ -1,0 +1,17 @@
+<%- include ("partials/header") %>
+
+
+<div id = "application" class = "ui main text container segment">
+ <h1>Sign Up!</h1>
+	<form class = "ui form" action="/register" method="post">
+		<div class = "field">
+			 <input type="text" name="username" placeholder="username">
+		</div>
+		<div class = "field">
+			<input type="password" name="password" placeholder="password">
+		</div> 		 
+    	 <button id = "knob" class = "ui primary button">SIGN UP</button>
+    </form>
+</div>
+
+<%- include ("partials/footer") %>
